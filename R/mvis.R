@@ -1,3 +1,18 @@
+#' Title
+#'
+#' @param df # A dataframe from which to use variables from.
+#' @param x # variable from the dataframe to create a visualization. A univariate is only x is provided
+#' @param y # variable from the dataframe to create a visualization.
+#' @param x_label # Label to be displayed representing the x variable.
+#' @param y_label # Label to be displayed representing the y variable.
+#' @param colorset # Numerical value for selecting a color set '1, 2, 3, 4'
+#' @param categoryCol # Discrete variable for setting plot colors based on it
+#'
+#' @return # Returns a visualizations that suit variables given.
+#' @export
+#'
+#' @examples # Example: df, df$height, df$weight, 'Height', 'Weight', 4, df$gender
+#'
 mvis <- function(df, x, y = NULL, x_label = "NULL", y_label = "NULL", colorset = 1, categoryCol = "NULL")
 {
   # TODO: Create a collection of colours to use ex: 1, 2, 3
